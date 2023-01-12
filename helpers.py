@@ -107,7 +107,8 @@ def return_bit_mask(DetectorID, time1, no_days=1):
 
 
 def return_det_waveform(DetectorID, start_ts,end_ts ):
-     """
+
+    """
         Retrievs detector waveform at 5 sec aggregation for a time interval 
         Parameters
         ----------
@@ -122,7 +123,7 @@ def return_det_waveform(DetectorID, start_ts,end_ts ):
         -------
         df: dataframe
             dataframe with detector data at 5 sec aggregation
-        """
+    """
     conn = psycopg2.connect(host="localhost", database="postgres", user="postgres", password="postgres")
 
 
